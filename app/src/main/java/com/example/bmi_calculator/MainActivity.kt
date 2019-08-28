@@ -103,6 +103,7 @@ class MainActivity : AppCompatActivity() {
                     bmiVal.setTextColor(Color.parseColor("#ff3333"))
                     pasta.visibility = View.VISIBLE
                     bowl.visibility = View.VISIBLE
+                    song?.setVolume(500.toFloat(),500.toFloat())
                     song?.start()
                 }
 
