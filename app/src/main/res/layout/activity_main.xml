@@ -131,4 +131,29 @@
             app:layout_constraintHorizontal_bias="0.298"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+            android:id="@+id/bowl"
+            android:layout_width="235dp"
+            android:layout_height="232dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@mipmap/manwithabowl" />
+
+    <ImageView
+            android:id="@+id/pasta"
+            android:layout_width="232dp"
+            android:layout_height="232dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@mipmap/manwithapasta"
+            tools:visibility="gone" />
 </androidx.constraintlayout.widget.ConstraintLayout>

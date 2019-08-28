@@ -3,12 +3,14 @@ package com.example.bmi_calculator
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.media.MediaPlayer
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+    private var song: MediaPlayer? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +21,8 @@ class MainActivity : AppCompatActivity() {
 
         var weightT = "kg"
         var heightT = "cm"
+
+        song = MediaPlayer.create(this, R.raw.ohmygod)
 
         weightType.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, weightTypes)
         heightType.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, heightTypes)
@@ -97,6 +101,9 @@ class MainActivity : AppCompatActivity() {
                 }else{
                     //Obesity
                     bmiVal.setTextColor(Color.parseColor("#ff3333"))
+                    pasta.visibility = View.VISIBLE
+                    bowl.visibility = View.VISIBLE
+                    song?.start()
                 }
 
             }
@@ -114,6 +121,9 @@ class MainActivity : AppCompatActivity() {
             back.visibility = View.GONE
             bmiLabel.visibility = View.GONE
             bmiVal.visibility = View.GONE
+
+            pasta.visibility = View.GONE
+            bowl.visibility = View.GONE
 
         }
     }
