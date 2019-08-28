@@ -133,9 +133,20 @@
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ImageView
+            android:id="@+id/pasta"
+            android:layout_width="225dp"
+            android:layout_height="225dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@mipmap/manwithapasta" />
+
+    <ImageView
             android:id="@+id/bowl"
-            android:layout_width="235dp"
-            android:layout_height="232dp"
+            android:layout_width="225dp"
+            android:layout_height="225dp"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -144,16 +155,4 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@mipmap/manwithabowl" />
-
-    <ImageView
-            android:id="@+id/pasta"
-            android:layout_width="232dp"
-            android:layout_height="232dp"
-            android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@mipmap/manwithapasta"
-            tools:visibility="gone" />
 </androidx.constraintlayout.widget.ConstraintLayout>
