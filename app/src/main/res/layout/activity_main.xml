@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="280dp"
+            android:layout_marginTop="276dp"
             android:layout_marginEnd="8dp"
             android:text="Calculate"
             app:layout_constraintEnd_toEndOf="parent"
@@ -33,20 +33,19 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <EditText
-            android:id="@+id/height"
-            android:layout_width="159dp"
-            android:layout_height="45dp"
+    <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="276dp"
             android:layout_marginEnd="8dp"
-            android:ems="10"
-            android:hint="Enter height"
-            android:inputType="number"
+            android:text="Back"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.283"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/weight" />
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Spinner
             android:id="@+id/heightType"
@@ -57,28 +56,12 @@
             app:layout_constraintStart_toEndOf="@+id/height"
             app:layout_constraintTop_toBottomOf="@+id/weightType" />
 
-    <EditText
-            android:id="@+id/weight"
-            android:layout_width="159dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="124dp"
-            android:layout_marginEnd="8dp"
-            android:ems="10"
-            android:hint="Enter weight"
-            android:inputType="number"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.283"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
-
     <Spinner
             android:id="@+id/weightType"
             android:layout_width="87dp"
             android:layout_height="45dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="124dp"
+            android:layout_marginTop="96dp"
             android:spinnerMode="dropdown"
             app:layout_constraintStart_toEndOf="@+id/weight"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -96,4 +79,56 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+            android:id="@+id/bmiLabel"
+            android:layout_width="159dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="96dp"
+            android:text="Your BMI is:"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+            android:id="@+id/bmiVal"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="28dp"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bmiLabel" />
+
+    <EditText
+            android:id="@+id/weight"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="96dp"
+            android:ems="10"
+            android:hint="Enter weight"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.298"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+            android:id="@+id/height"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="180dp"
+            android:ems="10"
+            android:hint="Enter height"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.298"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
